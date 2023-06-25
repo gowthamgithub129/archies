@@ -1,1 +1,19 @@
+   let count = 0;
+          while (num > 0){
+              count +=num&1;
+              num >>=1;
+          }
+          return  count;
+      };
+      const countA = countBits(a);
+      const countB = countBits(b);
+      
+      if(countA !== countB){
+          return countA - countB;
+      }
+      return a-b;
+  };
+  arr.sort(compareByBits);
+  return arr;
+};
 
